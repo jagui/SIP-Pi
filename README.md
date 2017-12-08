@@ -94,8 +94,8 @@ Cross build of PjSIP for Raspberry:
 ```sh
 export CC=/opt/raspi_tools/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc
 export LD=/opt/raspi_tools/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc
-export CROSS_COMPILE=/opt/raspi_tools/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-
 
+export CROSS_COMPILE=/opt/raspi_tools/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc
 export LDFLAGS="-L/opt/raspi_tools/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/lib/gcc/arm-linux-gnueabihf/4.8.3 -L/opt/raspi_tools/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/lib -ldl -lc"
 
 ./aconfigure --host=arm-linux-gnueabihf --prefix=$(pwd)/tmp_build --disable-video 
